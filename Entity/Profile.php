@@ -1,6 +1,14 @@
 <?php
+/*
+ * This file is part of the CampaignChain package.
+ *
+ * (c) CampaignChain Inc. <info@campaignchain.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 
-namespace Campaignchain\Location\GoogleBundle\Entity;
+namespace CampaignChain\Location\GoogleBundle\Entity;
 
 use CampaignChain\CoreBundle\Entity\Location;
 use Doctrine\ORM\Mapping as ORM;
@@ -9,7 +17,7 @@ use Doctrine\ORM\Mapping as ORM;
  * Profile
  *
  * @ORM\Table(name="campaignchain_location_google_analytics_profile")
- * @ORM\Entity(repositoryClass="Campaignchain\Location\GoogleBundle\Entity\ProfileRepository")
+ * @ORM\Entity(repositoryClass="CampaignChain\Location\GoogleBundle\Entity\ProfileRepository")
  */
 class Profile
 {
