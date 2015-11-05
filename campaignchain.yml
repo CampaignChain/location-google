@@ -1,0 +1,9 @@
+
+modules:
+    campaignchain-google-analytics:
+        display_name: Google Analytics Property
+        description: Shows analytics data for a selected web property
+        hooks:
+            default:
+        params:
+            cta_tracking: true

@@ -1,0 +1,4 @@
+services:
+#    campaignchain_location_google.example:
+#        class: Campaignchain\Location\GoogleBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

@@ -1,0 +1,42 @@
+{
+    "name": "campaignchain/location-google",
+    "description": "Google Analytics Integration",
+    "keywords": ["google", "analytics", "campaignchain"],
+    "type": "campaignchain-location",
+    "license": "MIT",
+    "homepage": "http://www.ymc.ch",
+    "license": "Apache-2.0",
+    "homepage": "http://www.campaignchain.com",
+    "authors": [
+        {
+            "name": "CampaignChain Inc.",
+            "email": "info@campaignchain.com",
+            "homepage": "http://www.campaignchain.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/CampaignChain/campaignchain-ce/issues",
+        "docs": "http://doc.campaignchain.com"
+    },
+    "require": {
+        "campaignchain/channel-google": "dev-master"
+    },
+    "autoload": {
+        "psr-4": { "Campaignchain\\Location\\GoogleBundle\\": "" }
+    },
+    "extra": {
+        "campaignchain": {
+            "kernel": {
+                "classes": [
+                    "Campaignchain\\Location\\GoogleBundle\\CampaignchainLocationGoogleBundle"
+                ],
+                "routing":
+                {
+                    "name": "campaignchain_location_google",
+                    "resource": "@CampaignchainLocationGoogleBundle/Resources/config/routing.yml",
+                    "prefix": "/"
+                }
+            }
+        }
+    }
+}
